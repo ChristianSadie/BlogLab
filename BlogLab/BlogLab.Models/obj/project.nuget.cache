@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SjaEp7PurIQX+UHJKuEOfqS5AJrZuzQXngKIFQCfq80q11nA27sPneuhoxH+33Tp0VXKUst3dkhhXeY8MyLCaw==",
+  "success": true,
+  "projectFilePath": "C:\\Code\\BlogLab\\BlogLab\\BlogLab.Models\\BlogLab.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chris\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
