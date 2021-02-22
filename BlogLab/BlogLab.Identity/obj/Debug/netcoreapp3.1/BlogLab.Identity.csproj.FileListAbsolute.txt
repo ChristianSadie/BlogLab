@@ -1,0 +1,8 @@
+C:\Code\BlogLab\BlogLab\BlogLab.Identity\bin\Debug\netcoreapp3.1\BlogLab.Identity.deps.json
+C:\Code\BlogLab\BlogLab\BlogLab.Identity\bin\Debug\netcoreapp3.1\BlogLab.Identity.dll
+C:\Code\BlogLab\BlogLab\BlogLab.Identity\bin\Debug\netcoreapp3.1\BlogLab.Models.dll
+C:\Code\BlogLab\BlogLab\BlogLab.Identity\bin\Debug\netcoreapp3.1\BlogLab.Models.pdb
+C:\Code\BlogLab\BlogLab\BlogLab.Identity\obj\Debug\netcoreapp3.1\BlogLab.Identity.csprojAssemblyReference.cache
+C:\Code\BlogLab\BlogLab\BlogLab.Identity\obj\Debug\netcoreapp3.1\BlogLab.Identity.AssemblyInfoInputs.cache
+C:\Code\BlogLab\BlogLab\BlogLab.Identity\obj\Debug\netcoreapp3.1\BlogLab.Identity.AssemblyInfo.cs
+C:\Code\BlogLab\BlogLab\BlogLab.Identity\obj\Debug\netcoreapp3.1\BlogLab.Identity.csproj.CopyComplete

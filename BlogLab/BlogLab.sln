@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogLab.Web", "BlogLab.Web\BlogLab.Web.csproj", "{ACE2B3E1-9915-40AC-A330-6B3F3FDA7FAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogLab.Web", "BlogLab.Web\BlogLab.Web.csproj", "{ACE2B3E1-9915-40AC-A330-6B3F3FDA7FAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogLab.Models", "BlogLab.Models\BlogLab.Models.csproj", "{DD86527D-F6C7-4152-8ED6-68DDF64CE208}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogLab.Models", "BlogLab.Models\BlogLab.Models.csproj", "{DD86527D-F6C7-4152-8ED6-68DDF64CE208}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogLab.Repository", "blogLab.Repository\BlogLab.Repository.csproj", "{DEC08094-6703-4A6E-A6D6-94F3204B4553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogLab.Repository", "blogLab.Repository\BlogLab.Repository.csproj", "{DEC08094-6703-4A6E-A6D6-94F3204B4553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogLab.Identity", "BlogLab.Identity\BlogLab.Identity.csproj", "{0789EE86-7707-4B38-996C-EA453F40EA2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{DEC08094-6703-4A6E-A6D6-94F3204B4553}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEC08094-6703-4A6E-A6D6-94F3204B4553}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEC08094-6703-4A6E-A6D6-94F3204B4553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0789EE86-7707-4B38-996C-EA453F40EA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0789EE86-7707-4B38-996C-EA453F40EA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0789EE86-7707-4B38-996C-EA453F40EA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0789EE86-7707-4B38-996C-EA453F40EA2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

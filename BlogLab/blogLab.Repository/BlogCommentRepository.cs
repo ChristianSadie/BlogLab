@@ -56,16 +56,35 @@ namespace BlogLab.Repository
             {
                 await connection.OpenAsync();
 
-                blogComment = await connection.QueryFirstOrDefaultAsync<Photo>("Photo_Get", new { PhotoId = photoId },
+                blogComment = await connection.QueryFirstOrDefaultAsync<BlogComment>("BlogComment_Get", new { BlogCommentId = blogCommentId },
                 commandType: CommandType.StoredProcedure
                    );
             }
             return blogComment;
         }
 
-        public async Task<BlogComment> Upsert(BlogCommentCreate blogCommentCreate, int applicationUserId)
+        public async Task<BlogComment> UpsertAsync(BlogCommentCreate blogCommentCreate, int applicationUserId)
         {
-            throw new NotImplementedException();
+            var dataTable = new DataTable();
+            dataTable.Columns.Add("BlogCommentId", typeof(int));
+            dataTable.Columns.Add("ParentBlogCommentId", typeof(int));
+            dataTable.Columns.Add("BlogId", typeof(int));
+            dataTable.Columns.Add("Content", typeof(string));
+
+            dataTable.Rows.Add(blogCommentCreate.BlogCommentId, blogCommentCreate.ParentBlogCommentId, blogCommentCreate.BlogId, blogCommentCreate.Content);
+
+            int? newBlogCommentId;
+            using (var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection")))
+            {
+                await connection.OpenAsync();
+
+                newBlogCommentId = await connection.ExecuteScalarAsync<int?>("BlogComment_Insert", new { BlogComment = dataTable.AsTableValuedParameter("dbo.BlogCommentType") },
+                commandType: CommandType.StoredProcedure);
+            }
+
+            newBlogCommentId = newBlogCommentId ?? blogCommentCreate.BlogCommentId;
+            BlogComment blogComment = await GetAsync(newBlogCommentId.Value);
+            return blogComment;
         }
     }
 }
